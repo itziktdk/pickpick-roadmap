@@ -4,18 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PickPick - Roadmap</title>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
-.lock-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:#1a1a2e;z-index:9999;display:flex;align-items:center;justify-content:center;font-family:'Heebo',sans-serif}
-.lock-box{text-align:center;padding:40px;animation:fadeIn 0.5s ease}
-@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-.lock-icon{font-size:4em;margin-bottom:20px}
-.lock-title{font-size:1.8em;margin-bottom:8px;color:#FF6B6B}
+.lock-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:#1a1a2e;z-index:9999;display:flex;align-items:center;justify-content:center;font-family:'Segoe UI',Tahoma,sans-serif}
+.lock-box{text-align:center;padding:40px}
+.lock-logo{font-size:2.5em;font-weight:900;background:linear-gradient(135deg,#FF6B6B,#ff8e8e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:20px}
 .lock-sub{color:#aaa;margin-bottom:30px;font-size:1em}
-.lock-input{background:rgba(255,255,255,0.1);border:2px solid rgba(255,107,107,0.5);border-radius:12px;padding:16px 20px;font-size:1.1em;color:#fff;text-align:center;width:100%;max-width:300px;outline:none;margin-bottom:15px;display:block;margin-left:auto;margin-right:auto;font-family:'Heebo',sans-serif}
+.lock-input{background:rgba(255,255,255,0.1);border:2px solid rgba(255,107,107,0.5);border-radius:12px;padding:16px 20px;font-size:1.1em;color:#fff;text-align:center;width:100%;max-width:300px;outline:none;margin-bottom:15px;display:block;margin-left:auto;margin-right:auto}
 .lock-input::placeholder{color:rgba(255,255,255,0.4)}
 .lock-input:focus{border-color:#FF6B6B;box-shadow:0 0 20px rgba(255,107,107,0.3)}
-.lock-btn{background:linear-gradient(135deg,#FF6B6B,#ff8e8e);border:none;border-radius:12px;padding:14px 40px;font-size:1.1em;color:#fff;cursor:pointer;font-weight:bold;font-family:'Heebo',sans-serif}
+.lock-btn{background:linear-gradient(135deg,#FF6B6B,#ff8e8e);border:none;border-radius:12px;padding:14px 40px;font-size:1.1em;color:#fff;cursor:pointer;font-weight:bold}
 .lock-btn:active{transform:scale(0.95)}
 .lock-error{color:#ef4444;font-size:0.9em;margin-top:10px;display:none}
 .roadmap-content{display:none}
@@ -24,12 +21,11 @@
 <body>
 <div class="lock-overlay" id="lockOverlay">
 <div class="lock-box">
-<div class="lock-icon">🔒</div>
-<div class="lock-title">PickPick Roadmap</div>
-<div class="lock-sub">מסמך מוגן — הכנס סיסמה</div>
-<input type="password" class="lock-input" id="passInput" placeholder="סיסמה" autocomplete="off">
-<button class="lock-btn" onclick="unlock()">כניסה 🔑</button>
-<div class="lock-error" id="errorMsg">סיסמה שגויה ❌</div>
+<div class="lock-logo">PickPick</div>
+<div class="lock-sub">Product Roadmap | Protected Document</div>
+<input type="password" class="lock-input" id="passInput" placeholder="Password" autocomplete="off">
+<button class="lock-btn" onclick="unlock()">Enter</button>
+<div class="lock-error" id="errorMsg">Wrong password</div>
 </div>
 </div>
 <div class="roadmap-content" id="roadmapContent">
@@ -369,9 +365,9 @@ body {
 <!-- 1. TITLE -->
 <section class="hero">
   <div class="hero-content">
-    <div class="logo">📦</div>
+    <div class="logo" style="font-size:3rem;background:linear-gradient(135deg,#FF6B6B,#ff8e8e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:900;letter-spacing:-2px">PickPick</div>
     <div class="brand">PickPick</div>
-    <h2>Product Roadmap 2026–2027</h2>
+    <h2>Product Roadmap 2026-2027</h2>
     <div class="hero-meta">
       <strong>Prepared by:</strong> Johnny Tzadaka, Product Manager<br>
       <strong>For:</strong> Itzik Tzadaka, CEO<br>
@@ -517,7 +513,7 @@ body {
     </div>
     <!-- Phase 2 -->
     <div class="phase p2">
-      <div class="phase-label">Q3–Q4 2026</div>
+      <div class="phase-label">Q3-Q4 2026</div>
       <h3>Phase 2: Growth</h3>
       <ul>
         <li>WhatsApp message parsing</li>
@@ -532,7 +528,7 @@ body {
     </div>
     <!-- Phase 3 -->
     <div class="phase p3">
-      <div class="phase-label">Q1–Q2 2027</div>
+      <div class="phase-label">Q1-Q2 2027</div>
       <h3>Phase 3: Monetization</h3>
       <ul>
         <li>PickPick Premium — unlimited family, priority notifications</li>
